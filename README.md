@@ -3,7 +3,7 @@
 This project provides a hybrid Python/R workflow for analyzing the GSE60424 dataset, which profiles human CD8+ T-cell subsets using RNA-seq.
 
 ## Project Structure
-
+```bash 
 GSE60424_Analysis/
 ├── README.md
 ├── requirements.txt
@@ -13,8 +13,7 @@ GSE60424_Analysis/
 │   ├── 01_data_import_and_validation.py
 │   ├── 02_data_preprocessing.py
 │   ├── 03_exploratory_analysis.py
-│   ├── 04_differential_expression.R
-│   
+│   └── 04_differential_expression.R
 ├── results/
 │   ├── Plots&Figures/
 │   │   ├── pca_plot.png
@@ -26,6 +25,7 @@ GSE60424_Analysis/
 │       └── ma_plot.png
 └── docx/
     └── report.pdf
+```
 
 ## Requirements
 
