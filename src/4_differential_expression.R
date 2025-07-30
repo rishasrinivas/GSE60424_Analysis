@@ -42,11 +42,11 @@ res_df <- as.data.frame(res)
 res_df$gene <- rownames(res_df)
 
 # Save results
-write.csv(res_df, "results/deseq2_results.csv", row.names = FALSE)
+write.csv(res_df, "results/differential_analysis/deseq2_results.csv", row.names = FALSE)
 
 # MA Plot
 plotMA(res, main="MA Plot")
-dev.copy(png, "results/Plots&Figures/ma_plot.png")
+dev.copy(png, "results/differential_analysis/ma_plot.png")
 dev.off()
 
 # Volcano Plot
@@ -59,6 +59,6 @@ p_volcano <- ggplot(res_df, aes(x = log2FoldChange, y = -log10(padj), color = th
   geom_vline(xintercept = c(-1, 1), linetype = "dashed") +
   labs(title = "Volcano Plot", x = "Log2 Fold Change", y = "-Log10 (Adjusted P-value)")
 
-ggsave("results/Plots&Figures/volcano_plot.png", plot = p_volcano, width = 8, height = 6)
+ggsave("results/differential_analysis/volcano_plot.png", plot = p_volcano, width = 8, height = 6)
 
 print("Differential expression analysis complete.")
