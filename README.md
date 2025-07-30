@@ -6,7 +6,6 @@ This project provides a hybrid Python/R workflow for analyzing the GSE60424 data
 ```bash 
 GSE60424_Analysis/
 ├── README.md
-├── requirements.txt
 ├── data/
 │   └── GSE60424_GEOSubmit_FC1to11_normalized_counts.txt
 ├── src/
